@@ -141,6 +141,14 @@
     margin-bottom: 18px;
 }
 
+.article-inverse > .article-descr {
+    margin-right: 50px;
+}
+
+.article-inverse > .article-image-wrapper {
+    margin-right: 0;
+}
+
 .article:last-child {
     margin-bottom: 0;
 }
@@ -198,6 +206,7 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    width: 33%;
 }
 
 .about-us__item_1, .about-us__item_2, .about-us__item_3 {
@@ -241,6 +250,7 @@
     flex-direction: column;
     text-align: center;
     height: 565px;
+    z-index: 10;
 }
 
 .map-image-wrapper {
@@ -337,4 +347,9 @@
 
 .mb80 {
     margin-bottom: 80px;
+}
+
+.the-map {
+    width: 100%;
+    height: 565px;
 }

@@ -149,16 +149,16 @@
                 </div>
             </div>
         </div>
-        <div class="article">
-            <div class="article-image-wrapper">
-                <img src="image/aritcle-2.png" alt="" class="article__image">
-            </div>
+        <div class="article article-inverse">
             <div class="article-descr">
                 <div class="article__title">Лучшие цены в Москве</div>
                 <div class="article__text">Так как мы являемся самым крупным дисконтом Timberland в России и напрямую
                     сотрудничаем с фабриками, нам доступны специальные прайсы. Именно поэтому мы предлагаем минимальные
                     цены и можем регулярно проводить распродажи.
                 </div>
+            </div>
+            <div class="article-image-wrapper">
+                <img src="image/aritcle-2.png" alt="" class="article__image">
             </div>
         </div>
         <div class="article">
@@ -214,26 +214,7 @@
             </div>
         </div>
     </div>
-    <a class="dg-widget-link"
-       href="http://2gis.ru/moscow/firm/70000001028283518/center/37.67574548721314,55.74666848186304/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">
-        Посмотреть на карте Москвы
-    </a>
-    <div class="dg-widget-link">
-        <a href="http://2gis.ru/moscow/center/37.675754,55.746543/zoom/16/routeTab/rsType/bus/to/37.675754,55.746543╎Гипермаркет гироскутеров?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти
-            проезд до Гипермаркет гироскутеров</a>
-    </div>
-    <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
-    <script charset="utf-8">new DGWidgetLoader({
-        "width": "100%",
-        "height": 565,
-        "borderColor": "#a3a3a3",
-        "pos": {"lat": 55.74666848186304, "lon": 37.67574548721314, "zoom": 16},
-        "opt": {"city": "moscow"},
-        "org": [{"id": "70000001028283518"}]
-    });</script>
-    <noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в
-        настройках вашего браузера.
-    </noscript>
+    <div id="map" class="the-map"></div>
 </div>
 
 <div class="menBootsWrap container mb80">
@@ -469,3 +450,30 @@
     </div>
 </footer>
 </body>
+
+<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+
+<script type="text/javascript">
+    var map,
+        myIcon;
+
+    DG.then(function () {
+        myIcon = DG.icon({
+            iconUrl: 'image/2gis-marker.png',
+            iconSize: [28, 44]
+        });
+
+        map = DG.map('map', {
+            center: [55.74641, 37.673637],
+            zoom: 18
+        });
+
+        map.scrollWheelZoom.disable();
+        map.touchZoom.disable();
+
+        DG.marker([55.746659, 37.675139], {
+            icon: myIcon
+        }).addTo(map);
+    });
+
+</script>
