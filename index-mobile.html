@@ -17,78 +17,2141 @@
           content="Хотите купить ботинки Timberland в Москве? Закажите оригинальную обувь Тимберленд на официальном сайте timberland.net.ru. Звоните: +7 495 374-87-14."/>
     <meta name="keywords"
           content="timberland тимберленд официальный сайт обувь интернет-магазин ботинки купить фото оригинал где ru в россии каталог ру дешево производитель недорого бренд фирма сом марка москва "/>
-    <link href="css/allcssnew3.css" rel="stylesheet">
+    <script src="javascript/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="javascript/cloud-zoom.js" type="text/javascript"></script>
+    <script src="javascript/bootstrap.min.js" type="text/javascript"></script>
+    <script src="javascript/slick.js" type="text/javascript"></script>
+    <link href="css/mobile.css" rel="stylesheet">
+    <link href="css/newMobile.css" rel="stylesheet">
+    <script src="javascript/common.js" type="text/javascript"></script>
     <link href="favicon.png" rel="icon"/>
 </head>
 <body class="common-home">
 
-<div class="topnav">
+<header id="header">
     <div class="container">
-        <div class="col-xs-10">
-            <ul>
-                <li><a href="#">О компании</a></li>
-                <li><a href="/garantii_vozvrat">Гарантии и возврат</a></li>
-                <li><a href="/otzivi-o-botinkax-timberland">Отзывы</a></li>
-                <li><a href="/dostavka-timberland">Доставка и оплата</a></li>
-                <li><a href="/timberland-po-rasprodazhe/">Распродажа</a><a href="/timberland-po-rasprodazhe/"></a></li>
-                <li><a href="/cvet-botinok/">Цвета ботинок</a></li>
-                <li><a href="stati-o-timberland">Статьи</a></li>
-            </ul>
+        <div class="logo"><a href="/"><img src="image/mobile/logo_mobile.png" title="Timberladnde"></a></div>
+        <a href="tel:8 (495) 374-87-14" class="call_p">Связаться с нами</a>
+        <div id="topSearch">
         </div>
-        <div id="col-xs-2" class="col-xs-2"><p class="zclick">Заказать звонок</p></div>
-    </div>
-</div>
-<header class="afterNav">
-    <div class="container">
-        <div id="logo" class="topLogo">
-            <a href="http://timberland.net.ru/"><img src="http://timberland.net.ru/image/catalog/logo.png"
-                                                     title="Timberland" alt="Timberland" class="img-responsive"/></a>
+        <div class="searchPopup">
+            <div class="closePopUp"></div>
+            <div id="search" class="input-group">
+                <form action="#" method="get">
+                    <input type="text" name="search" value="" placeholder="Поиск" class="form-control input-lg"/>
+                    <span class="input-group-btn">
+			            <input type="submit" class="btn btn-default btn-lg" value="Поиск">
+		            </span>
+                </form>
+            </div>
         </div>
-        <div class="topDelivery">
-            <p>Бесплатная доставка по Москве за 24 часа</p>
-        </div>
-        <div class="topAdres"><p>м. Площадь Ильича, м. Римская, Улица Сергия Радонежского, дом 8</p></div>
-        <div class="topPhone">
-            <p>Ежедневно 10:00 - 21:00 <span>8 (495) 374-87-14</span></p>
-        </div>
-        <div id="search1" class="search1">
-        </div>
-
+        <nav class="navbar navbar-default menu-top">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed">
+                    <span class="sr-only">Меню</span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="wrap_mpanel">
+                    <div class="mpanel">
+                        <div class="mlogo">
+                            <img alt="" src="image/mobile/logoMobileOrange.png">
+                        </div>
+                        <div class="mclose"><span></span></div>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="/timberland-muzhskie-1">мужские</a></li>
+                        <li><a href="/timberland-zhenskie">женские</a></li>
+                        <li><a href="/timberland-zimnie-1">зимние</a></li>
+                        <li><a href="/demisezonnie-botinki-timberland">демисезонные</a></li>
+                        <li><a href="/timberland-osennie-1">осенние</a></li>
+                        <li><a href="/vesennie-botinki-timberland">весенние</a></li>
+                        <li><a href="/otzivi-o-botinkax-timberland">отзывы</a></li>
+                        <li><a href="/dostavka-timberland">доставка и оплата</a></li>
+                        <li><a href="/timberland-po-rasprodazhe">По распродаже</a></li>
+                        <li><a href="/Kontakty">КОНТАКТЫ</a></li>
+                        <li><a href="/cvet-botinok">Цвета ботинок</a></li>
+                        <li><a href="/stati-o-timberland">Статьи</a></li>
+                        <li><a href="/okompanii">О компании</a></li>
+                        <li><a href="/garantii_vozvrat">Гарантии и возврат</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
 </header>
-<div class="navWrap">
-    <div class="container">
-        <div id="origin" class="origin"><p>Оригинальные ботинки Тимберленд из США</p></div>
-        <div class="navMenu">
-            <ul>
-                <li><a href="#">Мужские</a></li>
-                <li><a href="#">Женские</a></li>
-                <li><a href="#">С мехом</a></li>
-                <li><a href="#">Без меха</a></li>
-                <li><a href="#">Кроссовки</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
+
+<div class="wrapBg" id="topHomeSpecial">
+    <div class="sliderWrap container">
+        <div class="sliderItem">
+            <div class="textInSlide">
+                <p>Лучшие ботинки Timberland в Москве</p>
+            </div>
+            <div class="item-image">
+                <div>
+                    <div class="image-discount-cat">-69%</div>
+                </div>
+                <img src="http://timberland.net.ru/image/cache/catalog/boots-540x540.png"
+                     alt="Timberland 10061 Yellow"/>
+            </div>
+            <div class="itemDescWrap">
+                <div class="item-name itemName">
+                    <a href="http://timberland.net.ru/mujkie-timberland-10061-yellow-bez-mexa ">Timberland 10061
+                        Yellow</a>
+                    <div class="itemPrice">
+                        <p>
+                            <span class="oldPrice">17,950</span>
+                            <span class="separator"> | </span>
+                            <span class="newPrice">5,490</span> руб.
+                        </p>
+                    </div>
+                </div>
+                <div class="item-sale">
+                    <a href="#">Купить</a>
+                </div>
+            </div>
         </div>
-        <div class="searchWrap">
-            <div id="search1" class="search1">
-                <div class="searchPopup">
-                    <div id="search" class="input-group">
-                        <form action="/search" method="get">
-                            <input type="text" name="search" value="" placeholder="Поиск"
-                                   class="form-control input-lg"/>
-                            <span class="input-group-btn">
-			<input type="submit" class="btn btn-default btn-lg" value="Поиск">
-		</span>
-                        </form>
+    </div>
+</div>
+
+<section id="mtop5">
+    <div class="container">
+        <p><a href="#">мужские ботинки</a></p>
+        <p><a href="#">женские ботинки</a></p></div>
+</section>
+
+<div class="container">
+    <div class="triggers">
+        <div class="trigger__item">
+            <div class="trigger__item-image-wrapper">
+                <img src="image/trigger-item-1.png" alt="">
+            </div>
+            <span class="trigger__item-text">Только фирменная обувь</span>
+        </div>
+        <div class="trigger__item">
+            <div class="trigger__item-image-wrapper">
+                <img src="image/trigger-item-2.png" alt="">
+            </div>
+            <span class="trigger__item-text">Натуральные кожа, замша и нубук</span>
+        </div>
+        <div class="trigger__item">
+            <div class="trigger__item-image-wrapper">
+                <img src="image/trigger-item-3.png" alt="">
+            </div>
+            <span class="trigger__item-text">Гарантия 60 дней</span>
+        </div>
+        <div class="trigger__item">
+            <div class="trigger__item-image-wrapper">
+                <img src="image/trigger-item-4.png" alt="">
+            </div>
+            <span class="trigger__item-text">Возврат и обмен без проблем 365 дней</span>
+        </div>
+    </div>
+</div>
+
+<div id="mob_item1" class="item-group">
+    <div class="container">
+        <div id="homeItems">
+            <div class="items-brand">
+                <span>Мужские ботинки</span>
+                <div class="items">
+                    <div class="item-row">
+
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/mujkie-timberland-10061-yellow-bez-mexa "><img
+                                            src="http://timberland.net.ru/image/cache/catalog/boots-200x200.png"
+                                            alt="Timberland 10061 Yellow" title="Timberland 10061 Yellow"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/mujkie-timberland-10061-yellow-bez-mexa ">Timberland
+                                        10061 Yellow</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">17,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">5,490</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[330]" value="3239" id="option-value-3239">
+                                        <label class="control-label" for="option-value-3239">41</label>
+
+
+                                        <input type="radio" name="option[330]" value="3118" id="option-value-3118">
+                                        <label class="control-label" for="option-value-3118">42</label>
+
+
+                                        <input type="radio" name="option[330]" value="3116" id="option-value-3116">
+                                        <label class="control-label" for="option-value-3116">43</label>
+
+
+                                        <input type="radio" name="option[330]" value="3597" id="option-value-3597">
+                                        <label class="control-label" for="option-value-3597">44</label>
+
+
+                                        <input type="radio" name="option[330]" value="3598" id="option-value-3598">
+                                        <label class="control-label" for="option-value-3598">45</label>
+
+
+                                        <input type="radio" name="option[330]" value="3599" id="option-value-3599">
+                                        <label class="control-label" for="option-value-3599">46</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/mujkie-timberland-10061-yellow-s-mexom"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/M10061/IMG_5132copy-200x200.jpg"
+                                            alt="Timberland 10061 Yellow" title="Timberland 10061 Yellow"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/mujkie-timberland-10061-yellow-s-mexom">Timberland
+                                        10061 Yellow</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">18,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[673]" value="3140" id="option-value-3140">
+                                        <label class="control-label" for="option-value-3140">41</label>
+
+
+                                        <input type="radio" name="option[673]" value="3258" id="option-value-3258">
+                                        <label class="control-label" for="option-value-3258">42</label>
+
+
+                                        <input type="radio" name="option[673]" value="3261" id="option-value-3261">
+                                        <label class="control-label" for="option-value-3261">45</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/mujskie-timberland-10061-black-bez-mexa"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/M10061/_13k-200x200.jpg"
+                                            alt="Timberland 10061 Black " title="Timberland 10061 Black "
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/mujskie-timberland-10061-black-bez-mexa">Timberland
+                                        10061 Black </a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">17,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[737]" value="3126" id="option-value-3126">
+                                        <label class="control-label" for="option-value-3126">43</label>
+
+
+                                        <input type="radio" name="option[737]" value="3128" id="option-value-3128">
+                                        <label class="control-label" for="option-value-3128">46</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/mujskie-timberland-10061-black-s-mexom"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/_ITR5163copy444x294-200x200.jpg"
+                                            alt="Timberland 10061 Black" title="Timberland 10061 Black"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/mujskie-timberland-10061-black-s-mexom">Timberland
+                                        10061 Black</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">17,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[795]" value="3573" id="option-value-3573">
+                                        <label class="control-label" for="option-value-3573">41</label>
+
+
+                                        <input type="radio" name="option[795]" value="3574" id="option-value-3574">
+                                        <label class="control-label" for="option-value-3574">42</label>
+
+
+                                        <input type="radio" name="option[795]" value="3570" id="option-value-3570">
+                                        <label class="control-label" for="option-value-3570">45</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/timberland-10061-brown-mujskie-bez-mexa"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/M10061/_ITR5152copy-200x200.jpg"
+                                            alt="Timberland 10061 Brown" title="Timberland 10061 Brown"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/timberland-10061-brown-mujskie-bez-mexa">Timberland
+                                        10061 Brown</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">17,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[340]" value="2580" id="option-value-2580">
+                                        <label class="control-label" for="option-value-2580">41</label>
+
+
+                                        <input type="radio" name="option[340]" value="2581" id="option-value-2581">
+                                        <label class="control-label" for="option-value-2581">42</label>
+
+
+                                        <input type="radio" name="option[340]" value="3243" id="option-value-3243">
+                                        <label class="control-label" for="option-value-3243">46</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/mujskie-timberland-10061-rijie-s-mexom"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/M10061/IMG_5090copy-200x200.jpg"
+                                            alt="Timberland 10061 Rust" title="Timberland 10061 Rust"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/mujskie-timberland-10061-rijie-s-mexom">Timberland
+                                        10061 Rust</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p><span class="newPrice">18,950</span> руб.</p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[677]" value="2711" id="option-value-2711">
+                                        <label class="control-label" for="option-value-2711">40</label>
+
+
+                                        <input type="radio" name="option[677]" value="2712" id="option-value-2712">
+                                        <label class="control-label" for="option-value-2712">41</label>
+
+
+                                        <input type="radio" name="option[677]" value="2713" id="option-value-2713">
+                                        <label class="control-label" for="option-value-2713">42</label>
+
+
+                                        <input type="radio" name="option[677]" value="2714" id="option-value-2714">
+                                        <label class="control-label" for="option-value-2714">43</label>
+
+
+                                        <input type="radio" name="option[677]" value="2715" id="option-value-2715">
+                                        <label class="control-label" for="option-value-2715">44</label>
+
+
+                                        <input type="radio" name="option[677]" value="2716" id="option-value-2716">
+                                        <label class="control-label" for="option-value-2716">45</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/zhenskie-timberland-10061-rijie-bez-mexa"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/W10061/IMG_5056copy-200x200.jpg"
+                                            alt="Timberland 10061 Rust" title="Timberland 10061 Rust"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/zhenskie-timberland-10061-rijie-bez-mexa">Timberland
+                                        10061 Rust</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p><span class="newPrice">17,950</span> руб.</p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[679]" value="2729" id="option-value-2729">
+                                        <label class="control-label" for="option-value-2729">35</label>
+
+
+                                        <input type="radio" name="option[679]" value="2730" id="option-value-2730">
+                                        <label class="control-label" for="option-value-2730">36</label>
+
+
+                                        <input type="radio" name="option[679]" value="2731" id="option-value-2731">
+                                        <label class="control-label" for="option-value-2731">37</label>
+
+
+                                        <input type="radio" name="option[679]" value="2732" id="option-value-2732">
+                                        <label class="control-label" for="option-value-2732">38</label>
+
+
+                                        <input type="radio" name="option[679]" value="2733" id="option-value-2733">
+                                        <label class="control-label" for="option-value-2733">39</label>
+
+
+                                        <input type="radio" name="option[679]" value="2734" id="option-value-2734">
+                                        <label class="control-label" for="option-value-2734">40</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/mujskie-timberland-10061-white-kojanue-s-mexom"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/M10061/_ITR5195copy-200x200.jpg"
+                                            alt="Timberland 10061 White" title="Timberland 10061 White"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/mujskie-timberland-10061-white-kojanue-s-mexom">Timberland
+                                        10061 White</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p><span class="newPrice">18,950</span> руб.</p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[343]" value="635" id="option-value-635">
+                                        <label class="control-label" for="option-value-635">40</label>
+
+
+                                        <input type="radio" name="option[343]" value="2595" id="option-value-2595">
+                                        <label class="control-label" for="option-value-2595">41</label>
+
+
+                                        <input type="radio" name="option[343]" value="2596" id="option-value-2596">
+                                        <label class="control-label" for="option-value-2596">42</label>
+
+
+                                        <input type="radio" name="option[343]" value="2597" id="option-value-2597">
+                                        <label class="control-label" for="option-value-2597">43</label>
+
+
+                                        <input type="radio" name="option[343]" value="2599" id="option-value-2599">
+                                        <label class="control-label" for="option-value-2599">44</label>
+
+
+                                        <input type="radio" name="option[343]" value="2598" id="option-value-2598">
+                                        <label class="control-label" for="option-value-2598">44</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items-brand">
+                <span>Женские ботинки</span>
+                <div class="items">
+                    <div class="item-row">
+
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-yellow-s-mexom"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/M10061/IMG_5133copy-200x200.jpg"
+                                            alt="Timberland 10061 Yellow" title="Timberland 10061 Yellow"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-yellow-s-mexom">Timberland
+                                        10061 Yellow</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">18,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[678]" value="3144" id="option-value-3144">
+                                        <label class="control-label" for="option-value-3144">36</label>
+
+
+                                        <input type="radio" name="option[678]" value="2725" id="option-value-2725">
+                                        <label class="control-label" for="option-value-2725">37</label>
+
+
+                                        <input type="radio" name="option[678]" value="2726" id="option-value-2726">
+                                        <label class="control-label" for="option-value-2726">38</label>
+
+
+                                        <input type="radio" name="option[678]" value="2727" id="option-value-2727">
+                                        <label class="control-label" for="option-value-2727">39</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-yellow-bez-mexa "><img
+                                            src="http://timberland.net.ru/image/cache/catalog/TNew/10061_exp2-200x200.jpg"
+                                            alt="Timberland 10061 Yellow" title="Timberland 10061 Yellow"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-yellow-bez-mexa ">Timberland
+                                        10061 Yellow</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">17,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">5,490</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[329]" value="556" id="option-value-556">
+                                        <label class="control-label" for="option-value-556">36</label>
+
+
+                                        <input type="radio" name="option[329]" value="3112" id="option-value-3112">
+                                        <label class="control-label" for="option-value-3112">37</label>
+
+
+                                        <input type="radio" name="option[329]" value="3113" id="option-value-3113">
+                                        <label class="control-label" for="option-value-3113">38</label>
+
+
+                                        <input type="radio" name="option[329]" value="3114" id="option-value-3114">
+                                        <label class="control-label" for="option-value-3114">39</label>
+
+
+                                        <input type="radio" name="option[329]" value="3596" id="option-value-3596">
+                                        <label class="control-label" for="option-value-3596">40</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-black-s-mexom"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/10061menleatherblack-200x200.jpg"
+                                            alt="Timberland 10061 Black " title="Timberland 10061 Black "
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-black-s-mexom">Timberland
+                                        10061 Black </a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">18,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[770]" value="3432" id="option-value-3432">
+                                        <label class="control-label" for="option-value-3432">36</label>
+
+
+                                        <input type="radio" name="option[770]" value="3431" id="option-value-3431">
+                                        <label class="control-label" for="option-value-3431">37</label>
+
+
+                                        <input type="radio" name="option[770]" value="3430" id="option-value-3430">
+                                        <label class="control-label" for="option-value-3430">38</label>
+
+
+                                        <input type="radio" name="option[770]" value="3429" id="option-value-3429">
+                                        <label class="control-label" for="option-value-3429">39</label>
+
+
+                                        <input type="radio" name="option[770]" value="3428" id="option-value-3428">
+                                        <label class="control-label" for="option-value-3428">40</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-black-bez-mexa"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/timberlandmenblackwinter3774x735-200x200.jpg"
+                                            alt="Timberland 10061 Black" title="Timberland 10061 Black"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-black-bez-mexa">Timberland
+                                        10061 Black</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">18,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[723]" value="3009" id="option-value-3009">
+                                        <label class="control-label" for="option-value-3009">37</label>
+
+
+                                        <input type="radio" name="option[723]" value="3010" id="option-value-3010">
+                                        <label class="control-label" for="option-value-3010">38</label>
+
+
+                                        <input type="radio" name="option[723]" value="3011" id="option-value-3011">
+                                        <label class="control-label" for="option-value-3011">39</label>
+
+
+                                        <input type="radio" name="option[723]" value="3250" id="option-value-3250">
+                                        <label class="control-label" for="option-value-3250">40</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/timberland-17061-yellow-jenskie-s-mexom"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/M17061/_1k-200x200.jpg"
+                                            alt="Timberland 17061 Yellow" title="Timberland 17061 Yellow"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/timberland-17061-yellow-jenskie-s-mexom">Timberland
+                                        17061 Yellow</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">19,490</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[672]" value="2680" id="option-value-2680">
+                                        <label class="control-label" for="option-value-2680">36</label>
+
+
+                                        <input type="radio" name="option[672]" value="2681" id="option-value-2681">
+                                        <label class="control-label" for="option-value-2681">37</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-17061-black-s-smexom "><img
+                                            src="http://timberland.net.ru/image/cache/catalog/Timberland17061black-200x200.jpg"
+                                            alt="Timberland 17061 Black" title="Timberland 17061 Black"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-17061-black-s-smexom ">Timberland
+                                        17061 Black</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">19,490</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[761]" value="3381" id="option-value-3381">
+                                        <label class="control-label" for="option-value-3381">37</label>
+
+
+                                        <input type="radio" name="option[761]" value="3383" id="option-value-3383">
+                                        <label class="control-label" for="option-value-3383">39</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-17061-chaki-s-mexom"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/17haki-200x200.jpg"
+                                            alt="Timberland 17061 Khaki" title="Timberland 17061 Khaki"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-17061-chaki-s-mexom">Timberland
+                                        17061 Khaki</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">19,490</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[759]" value="3370" id="option-value-3370">
+                                        <label class="control-label" for="option-value-3370">36</label>
+
+
+                                        <input type="radio" name="option[759]" value="3371" id="option-value-3371">
+                                        <label class="control-label" for="option-value-3371">37</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/jensjue-timberland-17061-rijie-s-mexom"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/M17061/_6k-200x200.jpg"
+                                            alt="Timberland 17061 Rust" title="Timberland 17061 Rust"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/jensjue-timberland-17061-rijie-s-mexom">Timberland
+                                        17061 Rust</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">19,490</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[671]" value="2674" id="option-value-2674">
+                                        <label class="control-label" for="option-value-2674">36</label>
+
+
+                                        <input type="radio" name="option[671]" value="2675" id="option-value-2675">
+                                        <label class="control-label" for="option-value-2675">37</label>
+
+
+                                        <input type="radio" name="option[671]" value="2676" id="option-value-2676">
+                                        <label class="control-label" for="option-value-2676">38</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items-brand">
+                <span>Зимние ботинки</span>
+                <div class="items">
+                    <div class="item-row">
+
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/mujkie-timberland-10061-yellow-s-mexom"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/M10061/IMG_5132copy-200x200.jpg"
+                                            alt="Timberland 10061 Yellow" title="Timberland 10061 Yellow"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/mujkie-timberland-10061-yellow-s-mexom">Timberland
+                                        10061 Yellow</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">18,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[673]" value="3140" id="option-value-3140">
+                                        <label class="control-label" for="option-value-3140">41</label>
+
+
+                                        <input type="radio" name="option[673]" value="3258" id="option-value-3258">
+                                        <label class="control-label" for="option-value-3258">42</label>
+
+
+                                        <input type="radio" name="option[673]" value="3261" id="option-value-3261">
+                                        <label class="control-label" for="option-value-3261">45</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-yellow-s-mexom"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/M10061/IMG_5133copy-200x200.jpg"
+                                            alt="Timberland 10061 Yellow" title="Timberland 10061 Yellow"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-yellow-s-mexom">Timberland
+                                        10061 Yellow</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">18,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[678]" value="3144" id="option-value-3144">
+                                        <label class="control-label" for="option-value-3144">36</label>
+
+
+                                        <input type="radio" name="option[678]" value="2725" id="option-value-2725">
+                                        <label class="control-label" for="option-value-2725">37</label>
+
+
+                                        <input type="radio" name="option[678]" value="2726" id="option-value-2726">
+                                        <label class="control-label" for="option-value-2726">38</label>
+
+
+                                        <input type="radio" name="option[678]" value="2727" id="option-value-2727">
+                                        <label class="control-label" for="option-value-2727">39</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-black-s-mexom"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/10061menleatherblack-200x200.jpg"
+                                            alt="Timberland 10061 Black " title="Timberland 10061 Black "
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-black-s-mexom">Timberland
+                                        10061 Black </a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">18,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[770]" value="3432" id="option-value-3432">
+                                        <label class="control-label" for="option-value-3432">36</label>
+
+
+                                        <input type="radio" name="option[770]" value="3431" id="option-value-3431">
+                                        <label class="control-label" for="option-value-3431">37</label>
+
+
+                                        <input type="radio" name="option[770]" value="3430" id="option-value-3430">
+                                        <label class="control-label" for="option-value-3430">38</label>
+
+
+                                        <input type="radio" name="option[770]" value="3429" id="option-value-3429">
+                                        <label class="control-label" for="option-value-3429">39</label>
+
+
+                                        <input type="radio" name="option[770]" value="3428" id="option-value-3428">
+                                        <label class="control-label" for="option-value-3428">40</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/mujskie-timberland-10061-black-s-mexom"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/_ITR5163copy444x294-200x200.jpg"
+                                            alt="Timberland 10061 Black" title="Timberland 10061 Black"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/mujskie-timberland-10061-black-s-mexom">Timberland
+                                        10061 Black</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">17,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[795]" value="3573" id="option-value-3573">
+                                        <label class="control-label" for="option-value-3573">41</label>
+
+
+                                        <input type="radio" name="option[795]" value="3574" id="option-value-3574">
+                                        <label class="control-label" for="option-value-3574">42</label>
+
+
+                                        <input type="radio" name="option[795]" value="3570" id="option-value-3570">
+                                        <label class="control-label" for="option-value-3570">45</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/timberland-17061-yellow-jenskie-s-mexom"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/M17061/_1k-200x200.jpg"
+                                            alt="Timberland 17061 Yellow" title="Timberland 17061 Yellow"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/timberland-17061-yellow-jenskie-s-mexom">Timberland
+                                        17061 Yellow</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">19,490</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[672]" value="2680" id="option-value-2680">
+                                        <label class="control-label" for="option-value-2680">36</label>
+
+
+                                        <input type="radio" name="option[672]" value="2681" id="option-value-2681">
+                                        <label class="control-label" for="option-value-2681">37</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-17061-black-s-smexom "><img
+                                            src="http://timberland.net.ru/image/cache/catalog/Timberland17061black-200x200.jpg"
+                                            alt="Timberland 17061 Black" title="Timberland 17061 Black"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-17061-black-s-smexom ">Timberland
+                                        17061 Black</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">19,490</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[761]" value="3381" id="option-value-3381">
+                                        <label class="control-label" for="option-value-3381">37</label>
+
+
+                                        <input type="radio" name="option[761]" value="3383" id="option-value-3383">
+                                        <label class="control-label" for="option-value-3383">39</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-17061-chaki-s-mexom"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/17haki-200x200.jpg"
+                                            alt="Timberland 17061 Khaki" title="Timberland 17061 Khaki"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-17061-chaki-s-mexom">Timberland
+                                        17061 Khaki</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">19,490</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[759]" value="3370" id="option-value-3370">
+                                        <label class="control-label" for="option-value-3370">36</label>
+
+
+                                        <input type="radio" name="option[759]" value="3371" id="option-value-3371">
+                                        <label class="control-label" for="option-value-3371">37</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/jensjue-timberland-17061-rijie-s-mexom"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/M17061/_6k-200x200.jpg"
+                                            alt="Timberland 17061 Rust" title="Timberland 17061 Rust"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/jensjue-timberland-17061-rijie-s-mexom">Timberland
+                                        17061 Rust</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">19,490</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[671]" value="2674" id="option-value-2674">
+                                        <label class="control-label" for="option-value-2674">36</label>
+
+
+                                        <input type="radio" name="option[671]" value="2675" id="option-value-2675">
+                                        <label class="control-label" for="option-value-2675">37</label>
+
+
+                                        <input type="radio" name="option[671]" value="2676" id="option-value-2676">
+                                        <label class="control-label" for="option-value-2676">38</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items-brand">
+                <span>Демисезонные ботинки</span>
+                <div class="items">
+                    <div class="item-row">
+
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/mujkie-timberland-10061-yellow-bez-mexa "><img
+                                            src="http://timberland.net.ru/image/cache/catalog/boots-200x200.png"
+                                            alt="Timberland 10061 Yellow" title="Timberland 10061 Yellow"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/mujkie-timberland-10061-yellow-bez-mexa ">Timberland
+                                        10061 Yellow</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">17,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">5,490</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[330]" value="3239" id="option-value-3239">
+                                        <label class="control-label" for="option-value-3239">41</label>
+
+
+                                        <input type="radio" name="option[330]" value="3118" id="option-value-3118">
+                                        <label class="control-label" for="option-value-3118">42</label>
+
+
+                                        <input type="radio" name="option[330]" value="3116" id="option-value-3116">
+                                        <label class="control-label" for="option-value-3116">43</label>
+
+
+                                        <input type="radio" name="option[330]" value="3597" id="option-value-3597">
+                                        <label class="control-label" for="option-value-3597">44</label>
+
+
+                                        <input type="radio" name="option[330]" value="3598" id="option-value-3598">
+                                        <label class="control-label" for="option-value-3598">45</label>
+
+
+                                        <input type="radio" name="option[330]" value="3599" id="option-value-3599">
+                                        <label class="control-label" for="option-value-3599">46</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-yellow-bez-mexa "><img
+                                            src="http://timberland.net.ru/image/cache/catalog/TNew/10061_exp2-200x200.jpg"
+                                            alt="Timberland 10061 Yellow" title="Timberland 10061 Yellow"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-yellow-bez-mexa ">Timberland
+                                        10061 Yellow</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">17,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">5,490</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[329]" value="556" id="option-value-556">
+                                        <label class="control-label" for="option-value-556">36</label>
+
+
+                                        <input type="radio" name="option[329]" value="3112" id="option-value-3112">
+                                        <label class="control-label" for="option-value-3112">37</label>
+
+
+                                        <input type="radio" name="option[329]" value="3113" id="option-value-3113">
+                                        <label class="control-label" for="option-value-3113">38</label>
+
+
+                                        <input type="radio" name="option[329]" value="3114" id="option-value-3114">
+                                        <label class="control-label" for="option-value-3114">39</label>
+
+
+                                        <input type="radio" name="option[329]" value="3596" id="option-value-3596">
+                                        <label class="control-label" for="option-value-3596">40</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-black-bez-mexa"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/timberlandmenblackwinter3774x735-200x200.jpg"
+                                            alt="Timberland 10061 Black" title="Timberland 10061 Black"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-black-bez-mexa">Timberland
+                                        10061 Black</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">18,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[723]" value="3009" id="option-value-3009">
+                                        <label class="control-label" for="option-value-3009">37</label>
+
+
+                                        <input type="radio" name="option[723]" value="3010" id="option-value-3010">
+                                        <label class="control-label" for="option-value-3010">38</label>
+
+
+                                        <input type="radio" name="option[723]" value="3011" id="option-value-3011">
+                                        <label class="control-label" for="option-value-3011">39</label>
+
+
+                                        <input type="radio" name="option[723]" value="3250" id="option-value-3250">
+                                        <label class="control-label" for="option-value-3250">40</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/mujskie-timberland-10061-black-bez-mexa"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/M10061/_13k-200x200.jpg"
+                                            alt="Timberland 10061 Black " title="Timberland 10061 Black "
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/mujskie-timberland-10061-black-bez-mexa">Timberland
+                                        10061 Black </a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">17,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[737]" value="3126" id="option-value-3126">
+                                        <label class="control-label" for="option-value-3126">43</label>
+
+
+                                        <input type="radio" name="option[737]" value="3128" id="option-value-3128">
+                                        <label class="control-label" for="option-value-3128">46</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/timberland-10061-rose-bez-mexa "><img
+                                            src="http://timberland.net.ru/image/cache/catalog/M10061New/111-200x200.jpg"
+                                            alt="Timberland 10061 Rose" title="Timberland 10061 Rose"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/timberland-10061-rose-bez-mexa ">Timberland 10061
+                                        Rose</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">17,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[740]" value="3252" id="option-value-3252">
+                                        <label class="control-label" for="option-value-3252">36</label>
+
+
+                                        <input type="radio" name="option[740]" value="3253" id="option-value-3253">
+                                        <label class="control-label" for="option-value-3253">37</label>
+
+
+                                        <input type="radio" name="option[740]" value="3254" id="option-value-3254">
+                                        <label class="control-label" for="option-value-3254">38</label>
+
+
+                                        <input type="radio" name="option[740]" value="3255" id="option-value-3255">
+                                        <label class="control-label" for="option-value-3255">39</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/timberland-10061-brown-jenskie-bez-mexa"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/W10061/timberlandmenbrownwinter4774x735-200x200.jpg"
+                                            alt="Timberland 10061 Brown" title="Timberland 10061 Brown"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/timberland-10061-brown-jenskie-bez-mexa">Timberland
+                                        10061 Brown</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">18,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[314]" value="459" id="option-value-459">
+                                        <label class="control-label" for="option-value-459">38</label>
+
+
+                                        <input type="radio" name="option[314]" value="2703" id="option-value-2703">
+                                        <label class="control-label" for="option-value-2703">39</label>
+
+
+                                        <input type="radio" name="option[314]" value="2704" id="option-value-2704">
+                                        <label class="control-label" for="option-value-2704">40</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/timberland-10061-brown-mujskie-bez-mexa"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/M10061/_ITR5152copy-200x200.jpg"
+                                            alt="Timberland 10061 Brown" title="Timberland 10061 Brown"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/timberland-10061-brown-mujskie-bez-mexa">Timberland
+                                        10061 Brown</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">17,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[340]" value="2580" id="option-value-2580">
+                                        <label class="control-label" for="option-value-2580">41</label>
+
+
+                                        <input type="radio" name="option[340]" value="2581" id="option-value-2581">
+                                        <label class="control-label" for="option-value-2581">42</label>
+
+
+                                        <input type="radio" name="option[340]" value="3243" id="option-value-3243">
+                                        <label class="control-label" for="option-value-3243">46</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-gray-bez-mexa"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/W10061/IMG_5696copy-200x200.jpg"
+                                            alt="Timberland 10061 Grey" title="Timberland 10061 Grey"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-gray-bez-mexa">Timberland
+                                        10061 Grey</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">17,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[682]" value="2749" id="option-value-2749">
+                                        <label class="control-label" for="option-value-2749">37</label>
+
+
+                                        <input type="radio" name="option[682]" value="2750" id="option-value-2750">
+                                        <label class="control-label" for="option-value-2750">38</label>
+
+
+                                        <input type="radio" name="option[682]" value="2751" id="option-value-2751">
+                                        <label class="control-label" for="option-value-2751">39</label>
+
+
+                                        <input type="radio" name="option[682]" value="2752" id="option-value-2752">
+                                        <label class="control-label" for="option-value-2752">40</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items-brand">
+                <span>Осенние ботинки</span>
+                <div class="items">
+                    <div class="item-row">
+
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/mujkie-timberland-10061-yellow-bez-mexa "><img
+                                            src="http://timberland.net.ru/image/cache/catalog/boots-200x200.png"
+                                            alt="Timberland 10061 Yellow" title="Timberland 10061 Yellow"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/mujkie-timberland-10061-yellow-bez-mexa ">Timberland
+                                        10061 Yellow</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">17,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">5,490</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[330]" value="3239" id="option-value-3239">
+                                        <label class="control-label" for="option-value-3239">41</label>
+
+
+                                        <input type="radio" name="option[330]" value="3118" id="option-value-3118">
+                                        <label class="control-label" for="option-value-3118">42</label>
+
+
+                                        <input type="radio" name="option[330]" value="3116" id="option-value-3116">
+                                        <label class="control-label" for="option-value-3116">43</label>
+
+
+                                        <input type="radio" name="option[330]" value="3597" id="option-value-3597">
+                                        <label class="control-label" for="option-value-3597">44</label>
+
+
+                                        <input type="radio" name="option[330]" value="3598" id="option-value-3598">
+                                        <label class="control-label" for="option-value-3598">45</label>
+
+
+                                        <input type="radio" name="option[330]" value="3599" id="option-value-3599">
+                                        <label class="control-label" for="option-value-3599">46</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-yellow-bez-mexa "><img
+                                            src="http://timberland.net.ru/image/cache/catalog/TNew/10061_exp2-200x200.jpg"
+                                            alt="Timberland 10061 Yellow" title="Timberland 10061 Yellow"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-yellow-bez-mexa ">Timberland
+                                        10061 Yellow</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">17,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">5,490</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[329]" value="556" id="option-value-556">
+                                        <label class="control-label" for="option-value-556">36</label>
+
+
+                                        <input type="radio" name="option[329]" value="3112" id="option-value-3112">
+                                        <label class="control-label" for="option-value-3112">37</label>
+
+
+                                        <input type="radio" name="option[329]" value="3113" id="option-value-3113">
+                                        <label class="control-label" for="option-value-3113">38</label>
+
+
+                                        <input type="radio" name="option[329]" value="3114" id="option-value-3114">
+                                        <label class="control-label" for="option-value-3114">39</label>
+
+
+                                        <input type="radio" name="option[329]" value="3596" id="option-value-3596">
+                                        <label class="control-label" for="option-value-3596">40</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-black-bez-mexa"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/timberlandmenblackwinter3774x735-200x200.jpg"
+                                            alt="Timberland 10061 Black" title="Timberland 10061 Black"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-black-bez-mexa">Timberland
+                                        10061 Black</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">18,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[723]" value="3009" id="option-value-3009">
+                                        <label class="control-label" for="option-value-3009">37</label>
+
+
+                                        <input type="radio" name="option[723]" value="3010" id="option-value-3010">
+                                        <label class="control-label" for="option-value-3010">38</label>
+
+
+                                        <input type="radio" name="option[723]" value="3011" id="option-value-3011">
+                                        <label class="control-label" for="option-value-3011">39</label>
+
+
+                                        <input type="radio" name="option[723]" value="3250" id="option-value-3250">
+                                        <label class="control-label" for="option-value-3250">40</label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/mujskie-timberland-10061-black-bez-mexa"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/M10061/_13k-200x200.jpg"
+                                            alt="Timberland 10061 Black " title="Timberland 10061 Black "
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/mujskie-timberland-10061-black-bez-mexa">Timberland
+                                        10061 Black </a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">17,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[737]" value="3126" id="option-value-3126">
+                                        <label class="control-label" for="option-value-3126">43</label>
+
+                                        <input type="radio" name="option[737]" value="3128" id="option-value-3128">
+                                        <label class="control-label" for="option-value-3128">46</label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/timberland-10061-rose-bez-mexa "><img
+                                            src="http://timberland.net.ru/image/cache/catalog/M10061New/111-200x200.jpg"
+                                            alt="Timberland 10061 Rose" title="Timberland 10061 Rose"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/timberland-10061-rose-bez-mexa ">Timberland 10061
+                                        Rose</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">17,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[740]" value="3252" id="option-value-3252">
+                                        <label class="control-label" for="option-value-3252">36</label>
+
+                                        <input type="radio" name="option[740]" value="3253" id="option-value-3253">
+                                        <label class="control-label" for="option-value-3253">37</label>
+
+                                        <input type="radio" name="option[740]" value="3254" id="option-value-3254">
+                                        <label class="control-label" for="option-value-3254">38</label>
+
+                                        <input type="radio" name="option[740]" value="3255" id="option-value-3255">
+                                        <label class="control-label" for="option-value-3255">39</label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/timberland-10061-brown-jenskie-bez-mexa"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/W10061/timberlandmenbrownwinter4774x735-200x200.jpg"
+                                            alt="Timberland 10061 Brown" title="Timberland 10061 Brown"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/timberland-10061-brown-jenskie-bez-mexa">Timberland
+                                        10061 Brown</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">18,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[314]" value="459" id="option-value-459">
+                                        <label class="control-label" for="option-value-459">38</label>
+
+                                        <input type="radio" name="option[314]" value="2703" id="option-value-2703">
+                                        <label class="control-label" for="option-value-2703">39</label>
+
+                                        <input type="radio" name="option[314]" value="2704" id="option-value-2704">
+                                        <label class="control-label" for="option-value-2704">40</label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/timberland-10061-brown-mujskie-bez-mexa"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/M10061/_ITR5152copy-200x200.jpg"
+                                            alt="Timberland 10061 Brown" title="Timberland 10061 Brown"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/timberland-10061-brown-mujskie-bez-mexa">Timberland
+                                        10061 Brown</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">17,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[340]" value="2580" id="option-value-2580">
+                                        <label class="control-label" for="option-value-2580">41</label>
+
+                                        <input type="radio" name="option[340]" value="2581" id="option-value-2581">
+                                        <label class="control-label" for="option-value-2581">42</label>
+
+                                        <input type="radio" name="option[340]" value="3243" id="option-value-3243">
+                                        <label class="control-label" for="option-value-3243">46</label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item product-right">
+                            <div class="item2">
+                                <div class="item-image">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-gray-bez-mexa"><img
+                                            src="http://timberland.net.ru/image/cache/catalog/W10061/IMG_5696copy-200x200.jpg"
+                                            alt="Timberland 10061 Grey" title="Timberland 10061 Grey"
+                                            class="img-responsive"></a>
+                                </div>
+                                <div class="item-name">
+                                    <a href="http://timberland.net.ru/jenskie-timberland-10061-gray-bez-mexa">Timberland
+                                        10061 Grey</a>
+                                </div>
+                                <div class="itemPrice">
+                                    <p>
+                                        <span class="oldPrice">17,950</span>
+                                        <span class="separator"> | </span>
+                                        <span class="newPrice">4,990</span> руб.
+                                    </p>
+                                </div>
+                                <div class="item-size">
+                                    <div class="options size-number">
+                                        <input type="radio" name="option[682]" value="2749" id="option-value-2749">
+                                        <label class="control-label" for="option-value-2749">37</label>
+
+                                        <input type="radio" name="option[682]" value="2750" id="option-value-2750">
+                                        <label class="control-label" for="option-value-2750">38</label>
+
+                                        <input type="radio" name="option[682]" value="2751" id="option-value-2751">
+                                        <label class="control-label" for="option-value-2751">39</label>
+
+                                        <input type="radio" name="option[682]" value="2752" id="option-value-2752">
+                                        <label class="control-label" for="option-value-2752">40</label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="cartWrap"><a href="http://timberland.net.ru/simplecheckout"></a>
-            <div class="cart">
+    </div>
+</div>
 
-                <span>0</span>
+<div class="container">
+    <div class="articles">
+        <div class="article">
+            <div class="article-image-wrapper">
+                <img src="image/aritcle-1.png" alt="" class="article__image">
+            </div>
+            <div class="article-descr">
+                <div class="article__title">Более 1000 пар в наличии</div>
+                <div class="article__text">В нашем магазине есть все размеры каждой имеющейся в наличии модели. И даже
+                    те, которые обычно раскупаются первыми. Примеряйте, совершайте покупки быстро и с удовольствием!
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <div class="article-image-wrapper">
+                <img src="image/aritcle-2.png" alt="" class="article__image">
+            </div>
+            <div class="article-descr">
+                <div class="article__title">Лучшие цены в Москве</div>
+                <div class="article__text">Так как мы являемся самым крупным дисконтом Timberland в России и напрямую
+                    сотрудничаем с фабриками, нам доступны специальные прайсы. Именно поэтому мы предлагаем минимальные
+                    цены и можем регулярно проводить распродажи.
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <div class="article-image-wrapper">
+                <img src="image/aritcle-3.png" alt="" class="article__image">
+            </div>
+            <div class="article-descr">
+                <div class="article__title">Опытные и вежливые продавцы</div>
+                <div class="article__text">Наш магазин был основан менеджерами Timberland: каждый сотрудник знает о
+                    марке все и имеет опыт работы не менее 5 лет. А вежливость и открытость наших продавцов – одна из
+                    причин, по которой многие клиенты возвращаются к нам в магазин.
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+<div class="container">
+    <div class="map-descr">
+        <div class="map-image-wrapper">
+            <img src="image/metro.png" alt="">
+        </div>
+        <div class="map-top-descr">
+            2 минуты от метро Римская и Площадь Ильича
+        </div>
+        <div class="map-middle-descr">
+            <p class="map-descr_strong-text">Удобный подъезд с Садового и Третьего Транспортного кольца</p>
+            <p class="map-descr_light-text">Для наших клиентов действует удобная парковка у входа в магазин.</p>
+        </div>
+        <div class="map-bottom-descr">
+            <p class="map-bottom-descr-large">
+                Улица Сергия Радонежского, 8 <br>
+                тел +7 (495) 374-87-14
+            </p>
+            <p class="map-bottom-descr-small">
+                С 10:00 до 21:00 без перерывов <br> и выходных
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="bootsHistory container">
+    <h1 id="h1home">Timberland</h1>
+
+    <p style="text-align: justify; ">Тимберленд — универсальная обувь, подходящая как для неспешных городских прогулок,
+        так и для дальних путешествий. На нашем официальном сайте интернет-магазина купить обувь фирмы Timberland не
+        составит труда. Заказать по выгодной цене ботинки марки «Тимберленд» у нас можно прямо на сайте или позвонив по
+        телефону +7 495 374-87-14.<br></p>
+    <h2 style="text-align: left;">Какими преимуществами обладает обувь Timberland?</h2>
+    <p style="text-align: justify; "><img src="http://timberland.net.ru/image/catalog/W10061/IMG_5048copy.jpg"
+                                          style="width: 182.268px; float: right; height: 183.5px;">Ботинки бренда
+        «Тимберленд» отличаются максимальной практичностью и прочностью, водонепроницаемостью и устойчивостью к любым
+        погодным условиям. Инновационная технология бесшовного соединения кожаного верха и литой подошвы с помощью
+        специального пресса позволила сделать ботинки Timberland идеальной обувью для всех времен года. Несмотря на
+        внешнюю простоту, Тимберленды сложно спутать с обувью от других производителей: высокая рифленая подошва,
+        нейлоновые шнурки, качественный нубук и устойчивые каблуки выгодно отличают бренд, а фурнитура из нержавеющей
+        стали обеспечивает длительную и комфортную носку. Не знаете, где купить ботинки и <a
+                href="http://timberland.net.ru/timberlan-krossovki">кроссовки Timberland</a>? На нашем официальном сайте
+        обувь Тимберленд представлена в каталоге с ценами, так что найти пару вам по душе и по карману не составит
+        труда. А услуга доставки посылки на дом (для жителей Москвы) поможет вам подобрать обувь по размеру, не выходя
+        из дома! Звоните нам по телефону +7 495 374-87-14 для того, чтобы купить оригинальную обувь Тимберленд в нашем
+        интернет-магазине, по цене, доступной каждому.</p>
+    <h2>Как появилась обувь бренда Тимберленд</h2>
+    <p>Сейчас купить недорого оригинал обуви Timberland от производителя в интернете может каждый. А вот первоначально
+        ботинки Тимберленд предназначались для лесорубов и рабочих: прочные, сухие и теплые, они не нагружали стопу и
+        при этом позволяли эффективно работать на свежем воздухе при любом климате. Само слово Timberland — это
+        сокращенное «Timberlander» — «Человек леса». Кстати, фирменный желтый цвет Тимберлендов — также дань
+        необходимости: именно ярко-желтая гамма лучше всего подходит для условий низкой видимости. </p>
+    <h2>Почему выбирают обувь Тимберленд?</h2>
+    <img src="http://timberland.net.ru/image/catalog/10063/IMG_5137copy.jpg"
+         style="text-align: justify; width: 144.031px; float: right; height: 144.031px;">
+    <p></p>
+    <p>
+    </p>
+    <p>Обувь фирмы «Тимберленд» по праву считается самой прочной и ноской. Ее качество подтверждено многочисленными
+        опытами и испытаниями. Например, 1983 году в Аляске ботинки тестировали во время гонок на собачьих упряжках в
+        условиях крайнего севера. Поэтому слоган «Качество выше, чем вам когда-либо понадобится» — не пустые слова.
+        Сегодня рабочие ботинки переживают новый виток популярности. Компания «Тимберленд» активно занимается защитой
+        окружающей среды и пропагандирует корпоративную социальную ответственность. Так, обувь известной коллекции
+        «Хранители Земли» на 40% состоит из переработанных автомобильных покрышек. А их внутренняя подкладка изготовлена
+        из экологически чистых материалов.</p>
+    <h2>Как купить ботинки Timberland на официальном сайте нашего интернет-магазина?</h2>
+    <p>В нашем официальном интернет-магазине обуви Тимберленд на сайте timberland.net.ru вы можете приобрести настоящие
+        ботинки с доставкой по Москве в день заказа. Для этого позвоните по телефону +7 495 374-87-14. Наши специалисты
+        ответят на все ваши вопросы. Купить оригинальные ботинки Timberland недорого вы также можете, посетив наш
+        магазин по адресу: Столешников переулок, дом 11. Здесь можно примерить и выбрать подходящую модель в спокойной
+        обстановке. В наличии мужские и <a href="http://timberland.net.ru/timberland-zhenskie">женские Тимберленды</a>
+        всех размеров, а также детские коллекции и даже оригинальные пинеточки для детей до года. Подлинность всех
+        коллекций подтверждена сертификатами от производителя.</p>
+    <h2>Какие модели оригинальной обуви Тимберленд можно купить на официальном сайте нашего интернет-магазина?</h2>
+    <p>В каталоге нашего официального сайта обуви Timberland содержатся модели различных коллекций, цветов и размеров.
+        Здесь вы можете посмотреть поближе как <a href="http://timberland.net.ru/timberland-muzhskie-1">мужские
+            Тимберленды</a>, так и женские. Поэтому ответ на вопрос, где купить Тимберленды дешево, появляется сам
+        собой. Конечно же у нас! Формат интернет-магазина позволяет купить оригинал обуви Тимберленд недорого от
+        производителя и хорошего качества. Кроме того, в нашем магазине timberland.net.ru регулярно проходят скидочные
+        акции, благодаря которым вы можете приобрести по доступной цене обувь Timberland. Не пропустите! Купить ботинки
+        Тимберленд на официальном сайте в России — практичное решение для всех, кто предпочитает активный образ жизни и
+        не хочет часами искать подходящую пару!</p></div>
+
+<footer id="footer-main">
+    <div class="container">
+        <div class="copyright">
+            <img src="image/mobile/logo_mobile.png" alt="">
+        </div>
+        <div class="call_pFooter">
+            <a href="tel:8 (495) 374-87-14" class="call_p">8 (495) 374-87-14</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    (function ($) {
+
+        $(".wform").submit(function (t) {
+            t.preventDefault();
+            var btext = $('.wform > button').text();
+            $('#wphone').removeAttr('style');
+            var e = 'wname=Перезвонить&zphone=' + $("#wphone").val();
+            $.ajax({
+                url: 'index.php?route=checkout/cart/addorder',
+                type: 'post',
+                data: e,
+                dataType: 'json',
+                beforeSend: function () {
+                    $('.wform > button').text('Отправка..');
+                },
+                complete: function () {
+                    $('.wform > button').text(btext);
+                },
+                success: function (json) {
+                    if (json['error']) {
+                        if (json['error']['phone']) {
+                            $('#wphone').css('border', '1px solid red');
+                        }
+                    } else {
+                        yaCounter26519511.reachGoal('MobTimb');
+                        $(".willcall").removeClass("active");
+                        $(".thx > p").remove();
+                        $(".thx, .popUpbg3").addClass("active");
+                        $(".thx").append("</div><p>Благодарим за заказ. <br>Наш менеджер свяжется с Вами в ближайшее время.</p>");
+                    }
+                }
+            });
+        });
+
+        setTimeout(function () {
+            $('.willcall, .popUpbg3').addClass('active');
+        }, 180000);
+
+        $(".qBuy").submit(function (t) {
+            t.preventDefault();
+            var btext = $('.qBuy > button').text();
+            var size = jQuery(".popUp .itemSize input[type=radio]:checked").next('label').text();
+            $('#iname, #iphone').removeAttr('style');
+            var e = 'iname=' + $("#iname").val() + '&iphone=' + $("#iphone").val() + '&ititle=' + $("#ititle").val() + '&iprice=' + $("#iprice").val() + '&isize=' + size + '&prid=' + $("#predprid").val() + '&iurl=' + $("#iurl").val();
+            $.ajax({
+                url: 'index.php?route=checkout/cart/addorder',
+                type: 'post',
+                data: e,
+                dataType: 'json',
+                beforeSend: function () {
+
+                    $('.qBuy > button').text('Отправка..');
+                },
+                complete: function () {
+                    $('.qBuy > button').text(btext);
+                },
+                success: function (json) {
+                    if (json['error']) {
+                        if (json['error']['name']) {
+                            $('#iname').css('border', '1px solid red');
+                        }
+                        if (json['error']['phone']) {
+                            $('#iphone').css('border', '1px solid red');
+                        }
+                    } else {
+                        yaCounter26519511.reachGoal('MobTimb');
+                        $(".popUp").removeClass("active");
+                        $(".thx > p").remove();
+                        $(".thx").addClass("active");
+                        $(".thx").append("</div><p>Благодарим за заказ. <br>Наш менеджер свяжется с Вами в ближайшее время.</p>");
+                    }
+                }
+            });
+        });
+
+
+        $('#iphone').keypress(function (event) {
+            if (event.which != 8 && isNaN(String.fromCharCode(event.which))) {
+                event.preventDefault();
+            }
+        });
+
+
+        $(".sale-btn.buy").click(function () {
+            if ($(this).parent().parent().find(".option").find("input").is(":checked")) {
+                $(".popUp, .popUpbg").addClass("active");
+                var popTitle = $(this).parent().parent().find(".itemName1").text(),
+                    popPrice = $(this).parent().parent().find(".itemPrice1").text(),
+                    iurl = $(this).parent().parent().find(".itemLinck1 a").attr("href");
+                isize = $(this).parent().parent().find(".options").find("input:checked ").next().text();
+
+                $("#ititle").val(popTitle);
+                $("#iprice").val(popPrice);
+                $("#iurl").val(iurl);
+                $("#isize").val(isize);
+            } else {
+                $('span.error').show();
+                setTimeout(function () {
+                    $('span.error').fadeOut('fast')
+                }, 3000);
+            }
+
+        });
+
+
+        $('div#topSearch').click(function () {
+            $('.popUpbg, .searchPopup').addClass('active');
+        });
+
+
+        $(".closePopUp, .popUpbg3").click(function () {
+            $(".popUp, .popUpbg, .zcall, .popUpbg3, .willcall, .thx, .searchPopup").removeClass("active");
+            $(".popTitle").html("");
+            $(".popPrice").html("");
+            $(".popUp .itemSize").html("");
+        });
+        $(".popUpbg").click(function () {
+            $(".popUp, .popUpbg, .zcall, .thx, .searchPopup").removeClass("active");
+            $(".popTitle").html("");
+            $(".popPrice").html("");
+            $(".popUp .itemSize").html("");
+        });
+
+
+        $('.menu-top ul.nav.navbar-nav > li>span').click(function () {
+            if (!$(this).hasClass('dl-subviewopen')) {
+                $('.menu-top ul.nav.navbar-nav').addClass('dl-subview');
+                $(this).parent().parent().children('li').removeClass('dl-subviewopen');
+                $(this).parent().addClass('dl-subviewopen');
+            }
+        });
+        $('.dl-back, .mclose').click(function () {
+            $('.menu-top ul.nav.navbar-nav').removeClass('dl-subview');
+            $('.menu-top ul.nav.navbar-nav li').removeClass('dl-subviewopen');
+        });
+        $('.navbar-toggle').click(function () {
+            if (!$(this).hasClass('collapsed')) {
+                $(this).addClass('collapsed');
+                $('.navbar-collapse').removeClass('in');
+                $('body').removeClass('menu_overflow');
+            }
+            else {
+                $(this).removeClass('collapsed');
+                $('.navbar-collapse').addClass('in');
+                $('body').addClass('menu_overflow');
+            }
+        });
+        $('.mclose').click(function () {
+            $('.menu-top ul.nav.navbar-nav').removeClass('dl-subview');
+            $('.menu-top ul.nav.navbar-nav li').removeClass('dl-subviewopen');
+            $('.navbar-toggle').addClass('collapsed');
+            $('.navbar-collapse').removeClass('in');
+            $('body').removeClass('menu_overflow');
+        });
+
+
+        var myArray = {};
+        var ri = 0;
+        var ti = 1;
+        var tti = 1;
+        $('#randomc p').each(function () {
+            ri++;
+            myArray[ri] = $(this).html();
+        });
+
+        $('.content .items .item-row').each(function () {
+            if (ti in myArray) {
+                if ($(this).is(':visible')) {
+                    $('.item-row:nth-child(' + tti + ')').append('<div class="ert" style="display:block;">' + myArray[ti] + '</div>');
+                } else {
+                    $('.item-row:nth-child(' + tti + ')').append('<div class="ert" style="display:none;">' + myArray[ti] + '</div>');
+                }
+                ti++;
+            } else {
+                ti = 1;
+                if ($(this).is(':visible')) {
+                    $('.item-row:nth-child(' + tti + ')').append('<div class="ert" style="display:block;">' + myArray[ti] + '</div>');
+                } else {
+                    $('.item-row:nth-child(' + tti + ')').append('<div class="ert" style="display:none;">' + myArray[ti] + '</div>');
+                }
+                ti++;
+            }
+            tti++;
+        });
+        $(function () {
+            var pgurl = window.location.href;
+            var text;
+            pgurl = pgurl.split('/');
+            pgurl = pgurl[pgurl.length - 1];
+            $('li a[href="/' + pgurl + '"]').each(function () {
+                text = $(this).text();
+                $(this).parent().html('<span class="disable">' + text + '</span>');
+            });
+        });
+        function convert_to_time(secs) {
+            secs = parseInt(secs);
+            hh = secs / 3600;
+            hh = parseInt(hh);
+            mmt = secs - (hh * 3600);
+            mm = mmt / 60;
+            mm = parseInt(mm);
+            ss = mmt - (mm * 60);
+
+            if (hh > 23) {
+                dd = hh / 24;
+                dd = parseInt(dd);
+                hh = hh - (dd * 24);
+            } else {
+                dd = 0;
+            }
+
+            if (ss < 10) {
+                ss = "0" + ss;
+            }
+            if (mm < 10) {
+                mm = "0" + mm;
+            }
+            if (hh < 10) {
+                hh = "0" + hh;
+            }
+            if (dd == 0) {
+                return (hh + ":" + mm + ":" + ss);
+            }
+            else {
+                if (dd > 1) {
+                    return (dd + " day " + hh + ":" + mm + ":" + ss);
+                }
+                else {
+                    return (dd + " day " + hh + ":" + mm + ":" + ss);
+                }
+            }
+        }
+
+        do_cd4 = function () {
+            if (typeof(sessionStorage.getItem("countdown")) === "string") {
+                countdown4 = parseInt(sessionStorage.getItem("countdown"), 10);
+            } else {
+                countdown4 = 90;
+            }
+
+
+            if (countdown4 == 0) {
+
+                // change text
+                $('.willcall, .popUpbg3').addClass('active');
+                // $.removeCookie('countdown', { path: '/' });
+                //document.cookie = 'countdown' + '=; expires=Thu, 01-Jan-70 00:00:01 GMT;';
+            } else {
+                countdown4 = countdown4 - 1;
+                sessionStorage.setItem('countdown', countdown4);
+                console.log(convert_to_time(countdown4));
+                setTimeout('do_cd4()', 1000);
+            }
+        }
+
+        do_cd4();
+    })(jQuery);
+</script>
+
+</body>
+</html>

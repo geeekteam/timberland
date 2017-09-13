@@ -223,6 +223,7 @@
     width: 64px;
     height: 52px;
     background-repeat: no-repeat;
+    background-size: 64px;
 }
 
 .about-us__item_1::after {
